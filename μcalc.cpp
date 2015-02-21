@@ -249,9 +249,9 @@ long long calculate (internalExpressionFormat exp) {  // calculating exp. and gi
 
 int main (int argc, const char* argv[]) {
     // Don't panic, it is just text 'How to'
-    string help      = "This is calculator.",// It can calculate expression with decimal numbers, operations + - * / % and brackets.\nUsage: " + argv[0] + " <command> [expression]\n\nCommands:\n\to - One expression\n\tm - More than one expressions\n\t    (enter q for quit)\n\tc - Get expression from arguments of command line // sadly, but don't working now\n\t    (for correct work you must separate operands and operators (including brackets) with whitespaces)\n\th - print help",
-           operators = "Operators:\n\t+ ",//addition\n\t- subtraction\n\t* multiplication\n\t/ integer division (round down)\n\t% modulo\n\t( and ) change priority\n\n* / % have higher priority than + -, but you can use brackets.",
-           wrong     = "For help type ",// + argv[0] + " h",
+    string help      = "This is calculator. It can calculate expression with decimal numbers, operations + - * / % and brackets.\nUsage: μcalc <command> [expression]\n\nCommands:\n\to - One expression\n\tm - More than one expressions\n\t    (enter q for quit)\n\tc - Get expression from arguments of command line // sadly, but don't working now\n\t    (for correct work you must separate operands and operators (including brackets) with whitespaces)\n\th - print help",
+           operators = "Operators:\n\t+ addition\n\t- subtraction\n\t* multiplication\n\t/ integer division (round down)\n\t% modulo\n\t( and ) change priority\n\n* / % have higher priority than + -, but you can use brackets.",
+           wrong     = "For help type \"μcalc h\"",
            hello     = "Print expression and press Enter";
     switch (argc) { 
         case 1: {          // No command - print help and exit
